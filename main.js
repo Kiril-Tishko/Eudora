@@ -13,7 +13,9 @@ function getRandomInt(min, max) {
 }
 let maxAttempts = getRandomInt(6, 8);
 
-alert(name + ', угадай число от 1 до 100. У тебя есть ' + maxAttempts + ' попыток. Удачи!');
+alert(name + ', угадай число от 1 до 100. У тебя есть ' + 
+      
+      + ' попыток. Удачи!');
 
 let numbar = random(100);
 let attempts = 1;
@@ -27,7 +29,7 @@ while (gues != numbar) {
 	}
 
 	if (attempts == maxAttempts && gues != numbar) {
-		alert('Вы потратили слишком много попыток. У вас их было, чтобы попробовать еще раз, нажмите "F5"');
+		alert('Вы потратили слишком много попыток. У вас их было ' + maxAttempts + ', чтобы попробовать еще раз, нажмите "F5"');
 		breka;
 	}
 }
