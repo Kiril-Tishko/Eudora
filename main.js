@@ -11,7 +11,7 @@ while (name == '' || name == null) {
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
-let maxAttempts = getRandomInt(6, 8);
+let maxAttempts = getRandomInt(4, 8);
 
 alert(name + ', угадай число от 1 до 100. У тебя есть ' + maxAttempts + ' попыток. Удачи!');
 
