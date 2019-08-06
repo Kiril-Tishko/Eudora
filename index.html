@@ -2,9 +2,226 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Guess numbers</title>
+	<title>Eudora</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,700i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<script src="main.js"></script>
+	<!-- HEADER -->
+	<header class="header" id="header">
+		<nav class="main-header" id="main-header">
+			<a class="main-header__toggle" id="main-header__toggle">
+				<span class="toggle__line"></span>
+			</a>
+			<ul class="main-header__menu animated zoomIn" id="main-header__menu">
+				<li><a href="#menu">menu</a></li>
+				<li><a href="#dish-menu">dish</a></li>
+				<li class="eudora"><h2><a href="#header">eudora</a></h2></li>
+				<li><a href="#offer">offer</a></li>
+				<li><a href="#contact">contact</a></li>
+			</ul>
+		</nav>
+		<div class="header__offer">
+			<h1 class="offer__title animated flipInY">Eudora is <span>simple</span> psd template</h1>
+			<p class="offer__sub-title sub-title animated flipInX">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<button class="offer__btn animated flipInY">lern more</button>
+		</div>
+	</header>
+	<!-- MENU -->
+	<section class="menu" id="menu">
+		<h3 class="menu__title title--blue line" id="menu__title">Lorem ipsum dolor sit amet</h3>
+		<p class="menu__sub-title sub-title" id="menu__sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<div class="slider">
+			<div class="category"></div>
+
+			<div class="block" id="block">
+				<button class="slider-button left-btn" id="left-btn" disabled="disabled">
+					<?xml version="1.0"?><svg class="svg-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 129 129" enable-background="new 0 0 129 129"><g><g><path d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z" data-original="#000" class="active-path" data-old_color="#000"/></g></g> </svg></svg>
+				</button>
+				<button class="slider-button right-btn" id="right-btn">
+					<?xml version="1.0"?><svg class="svg-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 129 129" enable-background="new 0 0 129 129"><g transform="matrix(-1 0 0 1 129 0)"><g><path d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z" data-original="#000" class="active-path" data-old_color="#000"/></g></g> </svg>
+				</button>
+
+				<div class="wrapper">
+					<div class="wrapper__card selected" id="first-square"><img src="img/item1.jpg" alt="">
+						<div class="card__info">
+							<span class="slider__cost">18$</span>
+							<h5 class="slider__name">Яичница с помидорчиком</h5>
+							<p class="slider__description description">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<button class="slider__button button--blue">order now</button>
+						</div>
+					</div>
+					<div class="wrapper__card"><img src="img/item2.jpg" alt="">
+						<div class="card__info">
+							<span class="slider__cost">87$</span>
+							<h5 class="slider__name">Сосисочки гарячие</h5>
+							<p class="slider__description description">tempor incididunt ut labore consectetur dolore magna aliqua adipisicing elit, sed do eiusmod.</p>
+							<button class="slider__button button--blue">order now</button>
+						</div>
+					</div>
+					<div class="wrapper__card"><img src="img/item3.jpg" alt="">
+						<div class="card__info">
+							<span class="slider__cost">20$</span>
+							<h5 class="slider__name">Пицa c ананасиком</h5>
+							<p class="slider__description description">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<button class="slider__button button--blue">order now</button>
+						</div>
+					</div>
+					<div class="wrapper__card"><img src="img/item4.jpg" alt="">
+						<div class="card__info">
+							<span class="slider__cost">40$</span>
+							<h5 class="slider__name">Лучшее мясо</h5>
+							<p class="slider__description description">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<button class="slider__button button--blue">order now</button>
+						</div>
+					</div>
+					<div class="wrapper__card"><img src="img/item1.jpg" alt="">
+						<div class="card__info">
+							<span class="slider__cost">23$</span>
+							<h5 class="slider__name">Яичница вкусная</h5>
+							<p class="slider__description description">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<button class="slider__button button--blue">order now</button>
+						</div>
+					</div>
+					<div class="wrapper__card"><img src="img/item2.jpg" alt="">
+						<div class="card__info">
+							<span class="slider__cost">10$</span>
+							<h5 class="slider__name">Блюдо недели!</h5>
+							<p class="slider__description description">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<button class="slider__button button--blue">order now</button>
+						</div>
+					</div>
+					<div class="wrapper__card"><img src="img/item3.jpg" alt="">
+						<div class="card__info">
+							<span class="slider__cost">10$</span>
+							<h5 class="slider__name">Блюдо недели!</h5>
+							<p class="slider__description description">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<button class="slider__button button--blue">order now</button>
+						</div>
+					</div>
+					<div class="wrapper__card"><img src="img/item4.jpg" alt="">
+						<div class="card__info">
+							<span class="slider__cost">10$</span>
+							<h5 class="slider__name">Блюдо недели!</h5>
+							<p class="slider__description description">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<button class="slider__button button--blue">order now</button>
+						</div>
+					</div>
+					<div class="wrapper__card"><img src="img/item1.jpg" alt="">
+						<div class="card__info">
+							<span class="slider__cost">10$</span>
+							<h5 class="slider__name">Блюдо недели!</h5>
+							<p class="slider__description description">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<button class="slider__button button--blue">order now</button>
+						</div>
+					</div>
+					<div class="wrapper__card"><img src="img/item3.jpg" alt="">
+						<div class="card__info">
+							<span class="slider__cost">10$</span>
+							<h5 class="slider__name">Блюдо недели!</h5>
+							<p class="slider__description description">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<button class="slider__button button--blue">order now</button>
+						</div>
+					</div>
+					<div class="wrapper__card"><img src="img/item4.jpg" alt="">
+						<div class="card__info">
+							<span class="slider__cost">10$</span>
+							<h5 class="slider__name">Блюдо недели!</h5>
+							<p class="slider__description description">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<button class="slider__button button--blue">order now</button>
+						</div>
+					</div>
+					<div class="wrapper__card"><img src="img/item1.jpg" alt="">
+						<div class="card__info">
+							<span class="slider__cost">10$</span>
+							<h5 class="slider__name">Блюдо недели!</h5>
+							<p class="slider__description description">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							<button class="slider__button button--blue">order now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- OFFER -->
+	<section class="offer" id="offer">
+		<div class="text-part" id="text-part">
+			<h5>Check out breckfest offer</h5>
+		</div>
+		<div class="img-part" id="img-part"></div>
+	</section>
+	<!-- DISH -->
+	<section class="dish-menu" id="dish-menu">
+		<div class="container">
+			<h3 class="dish-menu__title title--blue line" id="dish-menu__title">Lorem ipsum dolor sit amet</h3>
+			<p class="dish-menu__sub-title sub-title" id="dish-menu__sub-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<div class="dish-menu__wrapper">
+				<div class="wrapper__plate">
+					<div class="dish__img"><img src="img/meat.svg" alt=""></div>
+					<h5 class="dish__tittle">Lorem ipsum dolor</h5>
+					<p class="dish__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<button class="dish__button button--blue">lern more</button>
+				</div>
+				<div class="wrapper__plate">
+					<div class="dish__img"><img src="img/sushi.svg" alt=""></div>
+					<h5 class="dish__tittle">Lorem ipsum dolor</h5>
+					<p class="dish__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<button class="dish__button button--blue">lern more</button>
+				</div>
+				<div class="wrapper__plate">
+					<div class="dish__img"><img src="img/cake.svg" alt=""></div>
+					<h5 class="dish__tittle">Lorem ipsum dolor</h5>
+					<p class="dish__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<button class="dish__button button--blue">lern more</button>
+				</div>
+				<div class="wrapper__plate">
+					<div class="dish__img"><img src="img/meat.svg" alt=""></div>
+					<h5 class="dish__tittle">Lorem ipsum dolor</h5>
+					<p class="dish__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<button class="dish__button button--blue">lern more</button>
+				</div>
+				<div class="wrapper__plate">
+					<div class="dish__img"><img src="img/fish.svg" alt=""></div>
+					<h5 class="dish__tittle">Lorem ipsum dolor</h5>
+					<p class="dish__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<button class="dish__button button--blue">lern more</button>
+				</div>
+				<div class="wrapper__plate">
+					<div class="dish__img"><img src="img/porridge.svg" alt=""></div>
+					<h5 class="dish__tittle">Lorem ipsum dolor</h5>
+					<p class="dish__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<button class="dish__button button--blue">lern more</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- CONTACT -->
+	<section class="contact" id="contact">
+		<div id="contact__wrapper">
+			<h3 class="contact__title">Subrscribe our newsletter</h3>
+			<form action="">
+				<input class="contact__input" type="email" placeholder="write your e-mail adres" maxlength="70">
+				<button class="contact__button" type="submit">send e-mail</button>
+			</form>
+		</div>
+	</section>
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container">
+			<p class="footer__copyright">&#169; Site created by TKS Company. All rights reserved</p>
+			<ul class="footer__menu">
+				<li><a href="#header">header</a></li>
+				<li><a href="#menu">menu</a></li>
+				<li><a href="#dish-menu">dish</a></li>
+				<li><a href="#offer">offer</a></li>
+			</ul>
+		</div>
+	</footer>
+	<script async src="js/main.js"></script>
 </body>
 </html>
