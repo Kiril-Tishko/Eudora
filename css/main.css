@@ -12,6 +12,11 @@ html, body {
 
 body {
 	text-align: center;
+	background: rgba(0,0,0,.9);
+}
+
+section, footer {
+	background: #fff;
 }
 
 button {
@@ -69,9 +74,12 @@ a:hover:before {
 }
 
 .sub-title {
+	width: 75%;
+	max-width: 430px;
 	margin: 0 auto;
 	margin-top: 22px;
 	font-size: 12px;
+	color: #a4a8bc;
 	line-height: 25px;
 }
 
@@ -225,13 +233,6 @@ a:hover:before {
 /*	MENU	*/
 .menu__sub-title, .menu__title {
 	visibility: hidden;
-}
-
-.menu__sub-title {
-	z-index: 0;
-	max-width: 430px;
-	width: 75%;
-	color: #a4a8bc;
 }
 
 .line:before, .line:after {
@@ -452,6 +453,9 @@ a:hover:before {
 
 
 /*	DISH-MENU	*/
+.dish-menu {
+	padding-bottom: 75px;
+}
 .dish-menu__title, .dish-menu__sub-title {
 	visibility: hidden;
 }
@@ -501,7 +505,6 @@ a:hover:before {
 /*	CONTACT	*/
 .contact {
 	height: 330px;
-	margin-top: 75px;
 	background: url(../img/contact-background.jpg);
 }
 
@@ -726,7 +729,7 @@ a:hover:before {
 
 		position: absolute;
 		right: 15px;
-		top: 8px;
+		top: 6px;
 		margin: 0;
 		
 		background: rgba(0,0,0,0);
@@ -774,7 +777,7 @@ a:hover:before {
 	.main-header {
 		width: 100%;
 		height: 50px;
-		background: rgba(0,0,0,.9);
+		background: rgba(0,0,0,.8);
 		position: fixed;
 		z-index: 2;
 
