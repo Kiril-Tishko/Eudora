@@ -31,10 +31,10 @@ function Scroll() {
 	}
 
 	const menuTitle = document.getElementById('menu__title')
-	const menuSubTitle = document.getElementById('menu__sub-title')
+	const menuSubtitle = document.getElementById('menu__subtitle')
 	if (positionY > 200) {
 		menuTitle.classList.add('animated', 'zoomIn', 'visible')
-		menuSubTitle.classList.add('animated', 'zoomIn', 'visible')
+		menuSubtitle.classList.add('animated', 'zoomIn', 'visible')
 	}
 
 	const block = document.getElementById('block')
@@ -50,14 +50,14 @@ function Scroll() {
 	}
 
 	const dishMenu__title = document.getElementById('dish-menu__title')
-	const dishMenu__subTitle = document.getElementById('dish-menu__sub-title')
+	const dishMenu__subtitle = document.getElementById('dish-menu__subtitle')
 	if (positionY > 1200) {
 		dishMenu__title.classList.add('animated', 'zoomIn', 'visible')
-		dishMenu__subTitle.classList.add('animated', 'zoomIn', 'visible')
+		dishMenu__subtitle.classList.add('animated', 'zoomIn', 'visible')
 	}
 
 	const wrapperPlate = document.getElementsByClassName('wrapper__plate')
-	if (positionY > 1400) {
+	if (positionY > 1450) {
 		for (index = 0; index < wrapperPlate.length; ++index) {
 			wrapperPlate[index].classList.add('animated', 'zoomIn', 'visible')
 		}
