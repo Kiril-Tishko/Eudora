@@ -656,6 +656,7 @@
   src: local('Raleway'), local('Raleway-Regular'),
        url('../fonts/raleway-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/raleway-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       font-display: swap;
 }
 /* raleway-700 - latin */
 @font-face {
@@ -665,6 +666,7 @@
   src: local('Raleway Bold'), local('Raleway-Bold'),
        url('../fonts/raleway-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/raleway-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       font-display: swap;
 }
 
 
@@ -676,6 +678,7 @@
   src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'),
        url('../fonts/playfair-display-v18-vietnamese-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/playfair-display-v18-vietnamese-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       font-display: swap;
 }
 /* playfair-display-700italic - vietnamese */
 @font-face {
@@ -685,6 +688,7 @@
   src: local('Playfair Display Bold Italic'), local('PlayfairDisplay-BoldItalic'),
        url('../fonts/playfair-display-v18-vietnamese-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/playfair-display-v18-vietnamese-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
 }
 
 
@@ -696,4 +700,5 @@
   src: local(''),
        url('../fonts/oswald-v29-cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/oswald-v29-cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       font-display: swap;
 }
