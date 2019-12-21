@@ -1,235 +1,3 @@
-*, ::after, ::before {
-	box-sizing: border-box;
-}
-
-html, body {
-	margin: 0;
-	padding: 0;
-	font-family: Arial;
-	overflow-x: hidden;
-	scroll-behavior: smooth;
-}
-
-body {
-	text-align: center;
-	background: rgba(0,0,0,.9);
-}
-
-section, footer {
-	background: #fff;
-}
-
-button {
-	margin-top: 33px;
-	padding: 4px 13px;
-	background: rgba(0,0,0,0);
-	font-family: 'Oswald', sans-serif;
-	font-size: 13px;
-	color: #fff;
-	text-transform: uppercase;
-	cursor: pointer;
-}
-
-h1, h3 {
-	margin: 0;
-	font-family: 'Playfair Display', serif;
-	font-size: 37px;
-	font-style: italic;
-}
-
-/*	hover effect of "a" element	*/
-a {
-	text-decoration: none;
-	position: relative;
-}
-
-a::before {
-	content: '';
-	height: 1.6px;
-	right: 0;
-	bottom: -4px;
-	position: absolute;
-	width: 0%;
-	transition: all 0.2s;
-}
-
-a:hover:before {
-	width: 100%;
-	left: 0;
-}
-
-
-.container {
-	width: 100%;
-	padding: 0 10%;
-}
-
-.title--blue {
-	width: 500px;
-	margin: 0 auto;
-	padding-top: 65px;
-	color: #6e7498;
-	position: relative;
-}
-
-.subtitle {
-	width: 75%;
-	max-width: 430px;
-	margin: 0 auto;
-	margin-top: 22px;
-	font-size: 12px;
-	color: #a4a8bc;
-	line-height: 25px;
-}
-
-.description {
-	width: 135px;
-	margin: 0 auto;
-	margin-top: 11px;
-	font-size: 9px;
-	color: #a4a8bc;
-	line-height: 25px;
-}
-
-
-
-/*	HEADER	*/
-.header {
-	height: 680px;
-	background: url(../img/header-background.jpg) center center / cover no-repeat rgba(0,0,0,.5);
-	background-blend-mode: darken;
-	color: #fff;
-}
-
-.main-header__toggle {
-	display: none;
-}
-
-.main-header {
-	width: 100%;
-	height: 120px;
-	background: rgba(0,0,0,.45);
-	position: fixed;
-	overflow: hidden;
-	z-index: 2;
-}
-
-.main-header__menu {
-	display: flex;
-	justify-content: center;
-
-	margin: 0;
-	padding: 35px 0;
-
-	font-family: 'Raleway', sans-serif;
-	font-weight: bold;
-	font-size: 9px;
-	text-transform: uppercase;
-
-	animation-delay: 0.2s;
-}
-
-.main-header__menu > li {
-	display: inline-block;
-	padding: 0 20px;
-	padding-top: 25px;
-	list-style-type: none;
-}
-
-.main-header__menu > li > a {
-	color: #fff;
-}
-
-.main-header__menu > li > a::before {		/*	#fff color of line under hovered "a" element in header	*/
-	background-color: #fff;
-}
-
-.eudora {
-	padding-top: 0 !important;
-}
-
-.eudora > h2 {
-	margin: 0;
-	font-size: 37px;
-	font-family: 'Playfair Display', serif;
-	color: #e59205;
-	text-transform: capitalize;
-}
-
-.eudora a {
-	color: #e59205;
-}
-
-/* scrolled */
-.scrolled {
-	height: 50px;
-	background: rgba(0,0,0,.8);
-}
-
-.scrolled > .main-header__menu {
-	padding: 0;
-}
-
-.scrolled .eudora > h2 {
-	padding-top: 5px;
-	font-size: 30px;
-}
-
-.scrolled li {
-	padding: 0 26px;
-	padding-top: 25px;
-}
-
-.scrolled-transition h2,
-.scrolled-transition li,
-.scrolled .main-header__menu {
-	transition: all 0.3s;
-}
-
-.scrolled-transition h2 a {
-	transition: all 0.3s -0.06s;
-}
-
-
-.header__offer {
-	padding-top: 300px;
-}
-
-.offer__title {
-	max-width: 570px;
-	width: 90%;
-	margin: 0 auto;
-
-	animation-delay: 0.5s;
-}
-
-.offer__title span {
-	color: #e59205;
-}
-
-.offer__subtitle {
-	max-width: 375px;
-	width: 75%;
-	color: #bdbdbd;
-
-	animation-delay: 0.6s;
-}
-
-.offer__btn {
-	max-width: 130px;
-	border: 1px solid #fff;
-	transition: background 0.4s, color 0.6s;
-
-	animation-delay: 0.7s;
-}
-
-.offer__btn:hover {
-	background: #fff;
-	color: #000;
-}
-
-
-
 /*	MENU	*/
 .menu__subtitle, .menu__title {
 	visibility: hidden;
@@ -865,15 +633,25 @@ a:hover:before {
 
 
 
+@media (print), (prefers-reduced-motion: reduce) {
+	.animated {
+		-webkit-animation-delay: 0s !important;
+		animation-delay: 0s !important;
+	}
+}
 
 
+/*	Service class	*/
 .visible {
 	visibility: visible !important;
 }
 
-@media (print), (prefers-reduced-motion: reduce) {
-		.animated {
-			-webkit-animation-delay: 0s !important;
-			animation-delay: 0s !important;
-		}
-	}
+
+	/*	FONTS	*/
+	@font-face {
+	font-family: "ralewayregular";
+	src: url("../fonts/ralewayregular/ralewayregular.woff") format("woff"),
+			 url("../fonts/ralewayregular/ralewayregular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
